@@ -17,7 +17,7 @@ Assim possibiliou que pudesse estudar através de desafios semanais sucessivos q
 
 Nos links abaixo de cada módulo disponibilizo materiais de trabalhos práticos e desafios estudados no bootcamp:
 
-| ABERTURA | MÓDULO 1| MÓDULO 2 | MÓDULO 3 | MÓDULO 4 | DESAFIO FINAL |
+| [ABERTURA](https://github.com/masedos/Bootcamp-Engenheiro-de-Dados/tree/main/Abertura) | MÓDULO 1| MÓDULO 2 | MÓDULO 3 | MÓDULO 4 | DESAFIO FINAL |
 |---------|--------|---------|---------|---------|-------------|
 |`4h`     |`32h`   |`32h`    |`32h`    |`32h`    |`12h`        |   
 |Aquecimento e Regras do Jogo |Fundamentos|Armazenamento de dados| Solução de dados utilizando Ecossistema Hadoop |Infraestrutura de dados e arquitetura escalável|Desafio Final|
