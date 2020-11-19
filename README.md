@@ -1,7 +1,7 @@
 [![](https://github.com/masedos/Bootcamp-Engenheiro-de-Dados/blob/main/logo.png)](https://www.linkedin.com/in/masedos/)
 
 [![](https://img.shields.io/badge/made%20by-masedos-blue)](https://www.linkedin.com/in/masedos/)
-[[GitHub repo size](https://img.shields.io/badge/-engenheiro%20de%20dados-green)]
+![GitHub repo size](https://img.shields.io/badge/-engenheiro%20de%20dados-green)
 
 
 `Certificado:` [Curso em andamento](https://www.igti.com.br/custom/engenharia-de-dados/)
