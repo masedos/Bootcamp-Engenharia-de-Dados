@@ -26,5 +26,5 @@ Nos links abaixo de cada módulo disponibilizo materiais de trabalhos práticos 
 
 ## Trilha do bootcamp
 
-[![](https://github.com/masedos/Bootcamp-Engenharia-de-Dados/blob/main/Trilha%20Engenheiro%20de%20Dados.png)](https://www.linkedin.com/in/masedos/)
+[![](https://github.com/masedos/Bootcamp-Engenharia-de-Dados/blob/main/Trilha%20Engenharia%20de%20Dados.png)](https://www.linkedin.com/in/masedos/)
 
