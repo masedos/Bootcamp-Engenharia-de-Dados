@@ -1,4 +1,4 @@
-[![](https://github.com/masedos/Bootcamp-Engenheiro-de-Dados/blob/main/logo.png)](https://www.linkedin.com/in/masedos/)
+[![](https://github.com/masedos/Bootcamp-Engenharia-de-Dados/blob/main/logo.png)](https://www.linkedin.com/in/masedos/)
 
 [![](https://img.shields.io/badge/made%20by-masedos-blue)](https://www.linkedin.com/in/masedos/)
 ![GitHub repo size](https://img.shields.io/badge/-engenheiro%20de%20dados-green)
@@ -18,7 +18,7 @@ Assim possibiliou que pudesse estudar através de desafios semanais sucessivos q
 
 Nos links abaixo de cada módulo disponibilizo materiais de trabalhos práticos e desafios estudados no bootcamp:
 
-| [ABERTURA](https://github.com/masedos/Bootcamp-Engenheiro-de-Dados/tree/main/Abertura) | [MÓDULO 1](https://github.com/masedos/Bootcamp-Engenheiro-de-Dados/tree/main/M%C3%B3dulo%201)| MÓDULO 2 | MÓDULO 3 | MÓDULO 4 | DESAFIO FINAL |
+| [ABERTURA](https://github.com/masedos/Bootcamp-Engenharia-de-Dados/tree/main/Abertura) | [MÓDULO 1](https://github.com/masedos/Bootcamp-Engenharia-de-Dados/tree/main/M%C3%B3dulo%201)| MÓDULO 2 | MÓDULO 3 | MÓDULO 4 | DESAFIO FINAL |
 |---------|--------|---------|---------|---------|-------------|
 |`4h`     |`32h`   |`32h`    |`32h`    |`32h`    |`12h`        |   
 |Aquecimento e Regras do Jogo |Fundamentos|Armazenamento de dados| Solução de dados utilizando Ecossistema Hadoop |Infraestrutura de dados e arquitetura escalável|Desafio Final|
@@ -26,5 +26,5 @@ Nos links abaixo de cada módulo disponibilizo materiais de trabalhos práticos 
 
 ## Trilha do bootcamp
 
-[![](https://github.com/masedos/Bootcamp-Engenheiro-de-Dados/blob/main/Trilha%20Engenheiro%20de%20Dados.png)](https://www.linkedin.com/in/masedos/)
+[![](https://github.com/masedos/Bootcamp-Engenharia-de-Dados/blob/main/Trilha%20Engenheiro%20de%20Dados.png)](https://www.linkedin.com/in/masedos/)
 
