@@ -1,0 +1,110 @@
+Neo4J
+
+Selecionar Projects
+
+create(p:Pessoa{nome: 'José Alves', profissão: 'Desenvolvedor de sw'})
+create (c:Cidade {nome: 'São Paulo'})
+create (p)-[:RESIDE_EM]->(c)
+return *
+
+create(p:Pessoa{nome: 'José Pedro Silveira', profissão: 'Desenvolvedor de sw'})
+create (c:Cidade {nome: 'São Paulo'})
+create (p)-[:RESIDE_EM]->(c)
+return *
+
+create(p:Pessoa{nome: 'Pedro Nunes', profissão: 'Desenvolvedor de sw'})
+create (c:Cidade {nome: 'São Paulo'})
+create (p)-[:RESIDE_EM]->(c)
+return *
+create(p:Pessoa{nome: 'Carlos José', profissão: 'Tester'})
+create (c:Cidade {nome: 'São Paulo'})
+create (p)-[:RESIDE_EM]->(c)
+return *
+
+create(p:Pessoa{nome: 'Carla Pereira', profissão: 'Gerente'})
+create (c:Cidade {nome: 'Belo Horizonte'})
+create (p)-[:RESIDE_EM]->(c)
+return *
+
+MATCH (p:Pessoa) where ID(p) = 169
+return *
+
+MATCH (p:Pessoa) where ID(p) = 169
+set p.nome= 'JOSÉ DA SILVA OLIVEIRA'
+return *
+
+MATCH (p:Pessoa) where ID(p) = 169
+delete p
+return *
+
+Vai dar erro por causa do relacionamento
+
+MATCH (p:Pessoa) where ID(p) = 169
+detach delete p
+return *
+
+
+------ deletando
+MATCH (c:Cidade) detach delete c return *
+
+MATCH (p:Pessoa) delete p return *
+
+-- novamente com relacionamento de cidade
+
+create(p:Pessoa{nome: 'José Alves', profissão: 'Desenvolvedor de sw'})
+create (c:Cidade {nome: 'São Paulo'})
+create (p)-[:RESIDE_EM]->(c)
+return *
+
+create(p:Pessoa{nome: 'José Pedro Silveira', profissão: 'Desenvolvedor de sw'})
+naõ funciona MATCH (p:Pessoa{nome: 'José Pedro Silveira'}),(c:Cidade {nome: 'São Paulo'})
+return *
+
+MATCH (p:Pessoa), (c:Cidade)
+WHERE (p:Pessoa{nome='José Pedro Silveira'}) AND (c:Cidade{nome='São Paulo'})
+CREATE (Pessoa)-[f:Mora]->(Cidade)
+RETURN Pessoa, f, Cidade
+
+
+match (a:Aluno {RA: “140001”})-[r:Cursou{Semestre: “2014S1”}]->(d:Disciplina)
+where r.NotaFinal >= 5 and r.Trancou = false
+return *
+
+
+
+
+
+
+
+Criar um nó sem label:
+CREATE (n {nome: “Usuário 1”})
+
+Consultar o nó recém criado:
+MATCH (n {nome: “Usuário 1”}) return n
+
+
+Criar alguns nós e algumas relações entre eles:
+Para montar um segundo exemplo mais construtivo, vamos criar um pequeno grafo com as autorizações de acesso aos módulos de um sistema. No caso abaixo, estamos criando 2 usuários, criando 2 módulos do sistema (compras e financeiro) e estamos definindo 4 relações descrevendo como é o perfil de acesso de cada usuário a cada módulo. Uma grande vantagem do Cypher é a legibilidade das consultas, o que faz com que grande parte dos usuários entendam facilmente o que está acontecendo.
+CREATE (u1:Usuário {Nome: “Usuário 1”, Id: 1 })
+CREATE (u2:Usuário {Nome: “Usuário 2”, Id: 2 })
+CREATE (m1:ModuloSistema {Nome: “Compras”})
+CREATE (m2:ModuloSistema {Nome: “Financeiro”})
+CREATE (u1)-[r1:PosssuiAcesso {NívelAcesso: “escrita”}]->(m1)
+CREATE (u1)-[r2:PosssuiAcesso {NívelAcesso: “leitura”}]->(m1)
+CREATE (u2)-[r3:PosssuiAcesso {NívelAcesso: “administrador”}]->(m1)
+CREATE (u2)-[r4:PosssuiAcesso {NívelAcesso: “escrita”}]->(m2)
+
+
+Algumas consultas usando o grafo acima:
+Com este pequeno grafo, podemos ter uma pequena ideia inicial de como é fazer consultas com o Neo4j. Eu pessoalmente acho que é muito mais fácil aprender a fazer consultas em grafos porque não há complicadores como tabelas, joins e essas complexidades de bancos relacionais. Basta “desenhar” o padrão que você deseja e a consulta já está praticamente pronta. Coloquei nos comentários das fotos todos os detalhes para tentar deixar claro o que está acontecendo em cada print :)
+MATCH (u:Usuário) return *
+MATCH (u:Usuário), (m:ModuloSistema) return *
+MATCH (u:Usuário{Id: 1}), (m:ModuloSistema) return *
+MATCH (n:Usuário)-[r:PosssuiAcesso]->(m:ModuloSistema) return *
+
+MATCH (n:Usuário)-[r:PosssuiAcesso{NívelAcesso: “escrita”}]->(m:ModuloSistema) 
+return n, r, m
+
+MATCH (n:Usuário)-[r:PosssuiAcesso{NívelAcesso: “escrita”}]->(m:ModuloSistema) 
+return n.Nome, r.NívelAcesso, m.Nome
+

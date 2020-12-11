@@ -1,0 +1,84 @@
+cmd como administrador
+cd\cassandra\apache-cassandra-3.11.9\bin
+powershell Set-ExecutionPolicy Unrestricted
+cassandra.bat -f
+
+cmd como administrador
+cd\cassandra\apache-cassandra-3.11.9\bin
+powershell Set-ExecutionPolicy Unrestricted
+cqlsh.bat -f
+
+CREATE KEYSPACE teste
+ WITH 
+ REPLICATION = {
+   'class': 'SimpleStrategy',
+   'replication_factor' : 1
+ };
+
+use teste;
+
+CREATE TABLE posts (
+    tag varchar,
+    name varchar, 
+    author varchar,
+    description text, 
+    likes int, 
+    PRIMARY KEY (tag, name)
+  );
+
+insert into teste.posts (tag, name, author, description, likes) 
+values
+('apache-cassandra','Cassandra post','Jose','post do cassandra',0);
+
+select * from posts;
+
+insert into teste.posts (tag, name, author, description, likes)
+values
+('apache-cassandra','Cassandra post','Jose','post do cassandra',1);
+
+update posts set likes = 2 
+where tag = 'apache-cassandra' and name = 'Cassandra post';
+
+select * from posts;
+
+update posts set likes = 2 
+where tag = 'apache-kafka' and name = 'Kafka post';
+
+select * from posts where tag =   'apache-cassandra';
+
+select * from posts where likes = 1; (error)
+InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot execute this query as it might involve data filtering and thus may have unpredictable performance. If you want to execute this query despite the performance unpredictability, use ALLOW FILTERING"
+
+select * from posts where likes = 2 allow filtering;
+
+
+Criando views materializadas
+A partir da versão 3.0 do Cassandra, é possível utilizar as views materializadas. Segue exemplo de criação:
+
+
+create materialized view posts_by_likes as 
+select tag, name, author, description, likes
+from posts
+where tag is not null 
+and name is not null
+and likes is not null
+PRIMARY KEY (likes, tag, name);
+
+A partition key da view é o campo likes. Com isso, pode-se fazer a query filtrando pela quantidade de likes sem utilizar a cláusula “ALLOW FILTERING”:
+
+select * from posts_by_likes where likes = 2;
+
+
+Dicas importantes para o ambiente de produção
+Listamos abaixo as principais lições aprendidas com o Cassandra no ambiente de produção:
+● Não utilize o consistency level ALL: o Cassandra é tolerante a falhas, porém se utilizar essa configuração, sua aplicação irá perder performance e não irá mais suportar falhas. Se um nó do Cassandra falhar, sua aplicação irá falhar junto;
+● Cuidado com as views materializadas: é necessário testar bem antes de utilizar em produção;
+● Nunca utilize a cláusula “ALLOW FILTERING”: esta cláusula permite filtrar por campos que não estão na partition key, e com isso o Cassandra vai executar a query no cluster inteiro causando sérios problemas de performance;
+● É possível utilizar a cláusula “in” e passar o partition key, porém, dependendo da quantidade de registros no “in”, pode-se prejudicar o cluster. É melhor fazer “N” queries do que utilizar essa cláusula;
+● Monitore! O Cassandra expõe suas métricas através de jmx, e é possível capturá-las e visualizar através do Grafana.
+Lista de variáveis: Métricas
+Um exemplo de framework que captura e envia para o Graphite (banco de dados do Grafana): metrics-graphite;
+● Caso utilize um TTL pequeno, é necessário alterar o algoritmo de compactação para TimeWindowCompactionStrategy e configurar o intervalo de compactação manualmente, caso contrário o Cassandra irá demorar (default 10 dias) para desalocar o espaço em disco;
+● É importante seguir as recomendações de hardware para o ambiente de produção (Planning Hardware).
+
+

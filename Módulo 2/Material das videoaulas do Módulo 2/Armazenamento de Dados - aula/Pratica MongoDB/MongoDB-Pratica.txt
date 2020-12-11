@@ -1,0 +1,66 @@
+show dbs
+use teste_aula
+db.dropDatabase() 
+show dbs
+use teste_aula
+db.users.insertOne( { name: "Foo", age: 34, cars: [ "BMW 320d", "Audi R8" ] } )
+db.users.insertOne( { name: "TFC-test", age: 31, cars: [ "BMW 320d", "Audi R8" ] } )
+show dbs
+
+
+use teste_aula
+show collections
+db.customers.insert({ name: "Honey", age: 25, cars: [ "Audi R8" ] })
+show collections
+
+use teste_aula
+show collections
+db.customers.drop()
+show collections
+
+Se a coleção não existe o MongoDB retorna false
+db.exemplo.drop()
+
+db.customers.insertOne( { name: "Abhi", age: 34, cars: [ "BMW 320d", "Audi R8" ] } ) 
+
+db.customers.insertMany([
+ { name: "Midhuna", age: 23, cars: [ "BMW 320d", "Audi R8" ], place:"Amaravati" },
+ { name: "Akhil", age: 24, cars: [ "Audo A7", "Agera R" ], place:"New York" },
+ { name: "Honey", age: 25, cars: [ "Audi R8" ] },
+ { name: "Paul", age: 25, cars: [ "Audi R8" ] },
+ { name: "Stuart", age: 25, cars: [ "Audi R8" ] }
+])
+
+db.customers.find({})
+
+criteria={age:23}
+db.customer.find(criteria)
+
+
+projection_doc={"name":1,"age":1,”cars”:1,_id:0}
+db.customers.find({},projection_doc)
+db.customers.find({}, {"name":1, "age":1})
+db.customers.find({}, {"name":0, "age":0})
+
+
+criteria={name:"Akhil"}
+db.customers.find(criteria)
+update={name:"Akhil xxx",age:28}
+db.customers.update(criteria,update)
+db.customers.find(criteria)
+
+criteria={age:25}
+db.customers.find(criteria).count()
+update={$set:{cars: "Audi R8 xxx" }}
+options={multi:true}
+db.customers.update(criteria,update,options)
+db.customers.find(criteria)
+
+db.customers.find().limit(2)
+db.customers.find().skip(2)
+
+db.customers.find().sort({"age":1});
+db.customers.find().sort({});
+db.customers.find().sort({"age":-1,"name":1});
+
+

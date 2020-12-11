@@ -1,0 +1,213 @@
+idProduto;dscProduto;undMedida;numQuantidade;Categoria_idCategoria
+1;Road-750 Black;UN;1;1
+2;Bearing Ball;UN;1;2
+3;BB Ball Bearing;DZ;12;3
+4;Headset Ball Bearings;DZ;6;4
+5;Blade;UN;1;5
+6;LL Crankarm;DEZ;10;6
+7;ML Crankarm;DEZ;10;7
+8;HL Crankarm;UN;1;8
+9;Chainring Bolts;UN;1;1
+10;Chainring Nut;UN;1;2
+11;Chainring;UN;1;3
+12;Crown Race;UN;1;4
+13;Chain Stays;UN;1;5
+14;Decal 1;UN;1;6
+15;Decal 2;UN;1;7
+16;Down Tube;UN;1;8
+17;Montain End Caps;UN;1;1
+18;Road End Caps;UN;1;2
+19;Touring End Caps;UN;1;3
+20;Fork End;UN;1;9
+21;Freewheel;UN;1;9
+22;Flat Washer 1;UN;1;9
+23;Flat Washer 6;UN;1;9
+24;Flat Washer 2;DZ;12;9
+25;Flat Washer 9;DZ;6;9
+26;Flat Washer 4;UN;1;6
+27;Flat Washer 3;DEZ;10;6
+28;Flat Washer 8;DEZ;10;6
+29;Flat Washer 5;UN;1;6
+30;Flat Washer 7;UN;1;6
+31;Fork Crown;UN;1;7
+32;Front Derailleur Cage;UN;1;8
+33;Front Derailleur Linkage;UN;1;1
+34;Guide Pulley;UN;1;2
+35;LL Grip Tape;UN;1;3
+36;ML Grip Tape;UN;1;4
+37;HL Grip Tape;UN;1;5
+38;Thin-Jam Hex Nut 9;UN;1;6
+39;Thin-Jam Hex Nut 10;UN;1;7
+40;Thin-Jam Hex Nut 1;UN;1;8
+41;Thin-Jam Hex Nut 2;UN;1;1
+42;Thin-Jam Hex Nut 15;UN;1;2
+43;Thin-Jam Hex Nut 16;UN;1;3
+44;Thin-Jam Hex Nut 5;UN;1;4
+45;Thin-Jam Hex Nut 6;DZ;12;5
+46;Thin-Jam Hex Nut 3;DZ;6;6
+47;Thin-Jam Hex Nut 4;UN;1;7
+48;Thin-Jam Hex Nut 13;DEZ;10;8
+49;Thin-Jam Hex Nut 14;DEZ;10;1
+50;Thin-Jam Hex Nut 7;UN;1;2
+51;Thin-Jam Hex Nut 8;UN;1;3
+52;Thin-Jam Hex Nut 12;UN;1;4
+53;Thin-Jam Hex Nut 11;UN;1;5
+54;Hex Nut 5;UN;1;6
+55;Hex Nut 6;UN;1;7
+56;Hex Nut 16;UN;1;8
+57;Hex Nut 17;UN;1;1
+58;Hex Nut 7;UN;1;2
+59;Hex Nut 8;UN;1;3
+60;Hex Nut 9;UN;1;4
+61;Hex Nut 22;UN;1;5
+62;Hex Nut 23;UN;1;6
+63;Hex Nut 12;UN;1;7
+64;Hex Nut 13;UN;1;8
+65;Hex Nut 1;UN;1;1
+66;Hex Nut 10;DZ;12;2
+67;Hex Nut 11;DZ;6;3
+68;Hex Nut 2;UN;1;4
+69;Hex Nut 20;DEZ;10;5
+70;Hex Nut 21;DEZ;10;6
+71;Hex Nut 3;UN;1;7
+72;Hex Nut 14;UN;1;8
+73;Hex Nut 15;UN;1;1
+74;Hex Nut 4;UN;1;2
+75;Hex Nut 18;UN;1;3
+76;Hex Nut 19;UN;1;4
+77;Handlebar Tube;UN;1;5
+78;Head Tube;UN;1;6
+79;LL Hub;UN;1;7
+80;HL Hub;UN;1;8
+81;Keyed Washer;UN;1;1
+82;External Lock Washer 3;UN;1;2
+83;External Lock Washer 4;UN;1;3
+84;External Lock Washer 9;UN;1;4
+85;External Lock Washer 5;UN;1;5
+86;External Lock Washer 7;UN;1;6
+87;External Lock Washer 6;DZ;12;7
+88;External Lock Washer 1;DZ;6;8
+89;External Lock Washer 8;UN;1;1
+90;External Lock Washer 2;DEZ;10;2
+91;Internal Lock Washer 3;DEZ;10;3
+92;Internal Lock Washer 4;UN;1;4
+93;Internal Lock Washer 9;UN;1;5
+94;Internal Lock Washer 5;UN;1;6
+95;Internal Lock Washer 7;UN;1;7
+96;Internal Lock Washer 6;UN;1;8
+97;Internal Lock Washer 10;UN;1;1
+98;Internal Lock Washer 1;UN;1;2
+99;Internal Lock Washer 8;UN;1;3
+100;Internal Lock Washer 2;UN;1;4
+101;Thin-Jam Lock Nut 9;UN;1;5
+102;Thin-Jam Lock Nut 10;UN;1;6
+103;Thin-Jam Lock Nut 1;UN;1;7
+104;Thin-Jam Lock Nut 2;UN;1;8
+105;Thin-Jam Lock Nut 15;UN;1;1
+106;Thin-Jam Lock Nut 16;UN;1;2
+107;Thin-Jam Lock Nut 5;UN;1;3
+108;Thin-Jam Lock Nut 6;DZ;12;4
+109;Thin-Jam Lock Nut 3;DZ;6;5
+110;Thin-Jam Lock Nut 4;UN;1;6
+111;Thin-Jam Lock Nut 13;DEZ;10;7
+112;Thin-Jam Lock Nut 14;DEZ;10;8
+113;Thin-Jam Lock Nut 7;UN;1;1
+114;Thin-Jam Lock Nut 8;UN;1;2
+115;Thin-Jam Lock Nut 12;UN;1;3
+116;Thin-Jam Lock Nut 11;UN;1;4
+117;Lock Nut 5;UN;1;5
+118;Lock Nut 6;UN;1;6
+119;Lock Nut 16;UN;1;7
+120;Lock Nut 17;UN;1;8
+121;Lock Nut 7;UN;1;1
+122;Lock Nut 8;UN;1;2
+123;Lock Nut 9;UN;1;3
+124;Lock Nut 22;UN;1;4
+125;Lock Nut 23;UN;1;5
+126;Lock Nut 12;UN;1;6
+127;Lock Nut 13;UN;1;7
+128;Lock Nut 1;UN;1;8
+129;Lock Nut 10;DZ;12;1
+130;Lock Nut 11;DZ;6;2
+131;Lock Nut 2;UN;1;3
+132;Lock Nut 20;DEZ;10;4
+133;Lock Nut 21;DEZ;10;5
+134;Lock Nut 3;UN;1;6
+135;Lock Nut 14;UN;1;7
+136;Lock Nut 15;UN;1;8
+137;Lock Nut 4;UN;1;1
+138;Lock Nut 19;UN;1;2
+139;Lock Nut 18;UN;1;3
+140;Lock Ring;UN;1;4
+141;Lower Head Race;UN;1;5
+142;Lock Washer 4;UN;1;6
+143;Lock Washer 5;UN;1;7
+144;Lock Washer 10;UN;1;8
+145;Lock Washer 6;UN;1;1
+146;Lock Washer 13;UN;1;2
+147;Lock Washer 8;UN;1;3
+148;Lock Washer 1;UN;1;4
+149;Lock Washer 7;UN;1;5
+150;Lock Washer 12;DZ;12;6
+151;Lock Washer 2;DZ;6;7
+152;Lock Washer 9;UN;1;8
+153;Lock Washer 3;DEZ;10;1
+154;Lock Washer 11;DEZ;10;2
+155;Metal Angle;UN;1;3
+156;Metal Bar 1;UN;1;4
+157;Metal Bar 2;UN;1;5
+158;Metal Plate 2;UN;1;6
+159;Metal Plate 1;UN;1;7
+160;Metal Plate 3;UN;1;8
+161;Metal Sheet 2;UN;1;1
+162;Metal Sheet 3;UN;1;2
+163;Metal Sheet 7;UN;1;3
+164;Metal Sheet 4;UN;1;4
+165;Metal Sheet 5;UN;1;5
+166;Metal Sheet 6;UN;1;6
+167;Metal Sheet 1;UN;1;7
+168;Plastic Plate 1;DZ;12;6
+169;Plastic Plate 2;DZ;6;7
+170;Plastic Plate 3;UN;1;8
+171;Plastic Plate 4;DEZ;10;1
+172;Plastic Plate 5;DEZ;10;2
+173;Plastic Plate 6;UN;1;3
+174;Plastic Plate 7;UN;1;4
+175;Plastic Plate 8;UN;1;5
+176;Plastic Plate 9;UN;1;6
+177;Plastic Plate 10;DZ;12;6
+178;Plastic Plate 11;DZ;6;7
+179;Plastic Plate 12;UN;1;8
+180;Plastic Plate 13;DEZ;10;1
+181;Plastic Plate 14;DEZ;10;2
+182;Plastic Plate 15;UN;1;3
+183;Strings Steel 1;UN;1;4
+184;Strings Steel 2;UN;1;5
+185;Strings Steel 3;UN;1;6
+186;Strings Steel 4;DZ;12;6
+187;Strings Steel 5;DZ;6;7
+188;Strings Steel 6;UN;1;8
+189;Strings Steel 7;DEZ;10;1
+190;Strings Steel 8;DEZ;10;2
+191;Strings Steel 9;UN;1;3
+192;Strings Steel 10;UN;1;4
+193;Strings Steel 11;UN;1;5
+194;Strings Steel 12;UN;1;6
+195;Strings Steel 13;DZ;12;6
+196;Strings Steel 14;DZ;6;7
+197;Strings Steel 15;UN;1;8
+198;Strings Steel 16;DEZ;10;1
+199;Strings Steel 17;DEZ;10;2
+200;Strings Steel 18;UN;1;3
+201;Strings Steel 19;UN;1;4
+202;Strings Steel 20;UN;1;5
+203;Strings Steel 21;UN;1;6
+204;Strings Steel 22;DZ;12;6
+205;Strings Steel 23;DZ;6;7
+206;Strings Steel 24;UN;1;8
+207;Strings Steel 25;DEZ;10;1
+208;Strings Steel 26;DEZ;10;2
+209;Strings Steel 27;UN;1;3
+210;Strings Steel 28;UN;1;4
+211;Strings Steel 29;UN;1;5
+212;Strings Steel 30;UN;1;6
