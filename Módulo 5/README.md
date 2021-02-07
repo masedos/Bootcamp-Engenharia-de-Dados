@@ -1,7 +1,7 @@
 # Módulo 5 - Desafio final
 
 ## Objetivos:
-- Desafio final
+- Conclusão da aplicação final.
 
 
 
