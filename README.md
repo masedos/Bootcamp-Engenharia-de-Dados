@@ -4,7 +4,7 @@
 ![GitHub repo size](https://img.shields.io/badge/-engenheiro%20de%20dados-green)
 
 
-`Certificado:` [Curso em andamento](https://www.igti.com.br/custom/engenharia-de-dados/)
+`Certificado:` [Acesse aqui](https://github.com/masedos/Bootcamp-Engenharia-de-Dados/blob/main/Fernandes%20Macedo%20RibeiroBootcamp%20Engenharia%20de%20Dados.pdf)
 </br></br>
 `Duração:` 2 meses, 148 horas
 </br></br>
